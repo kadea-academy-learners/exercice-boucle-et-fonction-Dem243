@@ -13,8 +13,27 @@
 function max(a, b) {
   // Exercice non implémenté : retourner le plus grand ou un message si égaux
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
+
+  // Vérifie que les deux arguments sont des entiers
+  if (typeof a !== "number" || typeof b !== "number" || !Number.isInteger(a) || !Number.isInteger(b)) {
+    return null;
+  }
+
+  // Compare les deux nombres
+  if (a > b) {
+    return a;
+  } else if (b > a) {
+    return b;
+  } else {
+    return "Les deux nombres sont égaux";
+
+  }
+
 }
 
+console.log(max(65, "65"));
+
 // Ne pas modifier la ligne ci-dessous
-module.exports = { max }
+module.exports = {
+  max
+}

@@ -13,8 +13,22 @@
 function estImpair(n) {
   // Exercice non implémenté : vérifier si n est impair
   // Placeholder neutre : retourne null pour indiquer non-implémentation
-  return null;
-}
+  if (typeof n !== "number" || !Number.isInteger(n)) {
+    return null;
+  }
+  if (!Number.isInteger(n)) {
+    return null;
+  }
 
+
+  if (n % 2 !== 0) {
+    return true;
+  } else {
+    return false
+  }
+}
+console.log(estImpair(10));
 // Ne pas modifier la ligne ci-dessous
-module.exports = { estImpair };
+module.exports = {
+  estImpair
+};

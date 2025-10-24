@@ -12,7 +12,15 @@
   */
   function compteARebours() {
     // Placeholder neutre : ne fait rien
+
+    let nombre=10;
+    do {
+     console.log(nombre);
+     nombre--
+    } while (nombre >= 1);
+
   }
+compteARebours();
 
   // Ne pas modifier la ligne ci-dessous
   module.exports = { compteARebours }

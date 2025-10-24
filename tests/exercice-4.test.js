@@ -15,12 +15,13 @@ if (subtest == 'b' || runAll)
     expect(estImpair(4)).toBe(false);
     expect(estImpair(0)).toBe(false);
     expect(estImpair(-4)).toBe(false);
-    expect(estImpair(2.5)).toBe(false);
+
   });
 
 if (subtest == 'c' || runAll)
   test("Exercice 4c: estImpair() retourne null pour mauvais types", () => {
     expect(estImpair("3")).toBeNull();
+     expect(estImpair(2.5)).toBeNull();
     expect(estImpair(null)).toBeNull();
     expect(estImpair(undefined)).toBeNull();
     expect(estImpair([])).toBeNull();

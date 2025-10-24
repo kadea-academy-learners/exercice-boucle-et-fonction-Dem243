@@ -12,8 +12,19 @@
 function somme(n) {
   // Exercice non implémenté : retourner la somme de 1 à n
   // Placeholder neutre : retourne 0 pour indiquer non-implémentation
-  return 0;
+  if (n < 0 || typeof n !== "number") {
+    return 0;
+  }
+  let resultat = 0;
+  for (let i = 1; i <= n; i++) {
+    resultat += i
+
+  }
+return resultat;
 }
+console.log(somme(4));
 
 // Ne pas modifier la ligne ci-dessous
-module.exports = { somme }
+module.exports = {
+  somme
+}
